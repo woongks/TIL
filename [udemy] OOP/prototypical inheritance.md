@@ -29,3 +29,23 @@ also make sure to reset a constructor as well
 ```JavaScript
 Circle.prototype.constructor = Circle;
 ```
+
+super constructor
+
+```JavaScript
+
+function Circle(radius, color) {
+  Shape.call(this, color);
+  this.radius = radius
+}
+
+```
+
+how to refactor the following code?
+
+```JavaScript
+
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
+
+```
