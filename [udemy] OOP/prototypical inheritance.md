@@ -48,4 +48,9 @@ how to refactor the following code?
 Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle;
 
+function extend(Child, Parent) {
+  Child.prototype = Object.create(Parent.prototype)
+  Child.prototype.constructor = Child;
+}
+
 ```
