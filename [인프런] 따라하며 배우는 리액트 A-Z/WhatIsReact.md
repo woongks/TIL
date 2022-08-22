@@ -43,6 +43,17 @@
 비교해서 달라진 점만 파악할 수 있는데, 이 변경사항만 실제 돔에 적용을 시킨다.
 (바뀐 부분을 찾는 과정을 diffing이라고 한다. 바뀐 부분만 실제 돔에 적용시켜주는 것을 reconciliation 혹은 재조정이라고 한다.)
 
+### 리액트 작동 순서
+
+index.html -> src/index.js 에서 element를 잡아서 꾸민다.
+
+페이지 전환은 html5의 history api를 사용한다.
+
+html 태그를 JS에서 쓰는 것을 JSX(Javascript Syntax eXtension)라고 한다.
+
+리액트에서 JSX는 필수가 아니지만 리액트 문법으로 화면을 그리는 것보다 편리하다.
+그래서 JSX를 쓰고 바벨을 통해 변환을 시킨다.
+
 ### JSX Key?
 
 리액트에서 배열의 요소는 고유의 key 값을 가져야 한다.
